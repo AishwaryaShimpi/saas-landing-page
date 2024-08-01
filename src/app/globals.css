@@ -4,7 +4,7 @@
 
 @layer components {
   .btn {
-    @apply bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex tracking-tighter;
+    @apply bg-black text-white px-4 py-2 rounded-lg font-medium tracking-tighter text-center;
   }
 
   .btn-primary {
@@ -21,5 +21,21 @@
 
   .tag{
     @apply text-sm inline-flex border border-[#222]/10 rounded-lg px-3 py-1 tracking-tight
+  }
+
+  .section-title{
+    @apply text-center text-3xl md:text-[54px] md:leading-[60px] font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text 
+  }
+
+  .section-para{
+    @apply text-center text-[22px] leading-[30px] tracking-tight text-[#010D3E]
+  }
+
+  .section-heading{
+    @apply max-w-[540px] mx-auto
+  }
+
+  .card{
+    @apply p-10 border border-[#F1F1F1] rounded-3xl shadow-[0_70x_14px_#EAEAEA] max-w-sm w-full
   }
 }
